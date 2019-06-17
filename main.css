@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.topNav {
+    background-color: #f6f4f3;
+    max-width: 100%;
+    position: relative;
+    height: 60px;
+    display: block;
+    padding-left: 15%;
+    overflow: hidden;
+}
+.topNavImg {
+    float: left;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-height: 100%;
+    max-width: 80%;
+}
+.topNavLeft {
+    position: relative;
+    float: left;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 60px;
+    padding: 5px;
+}
+.topNavLeft a {
+    font-size: 20px;
+    position: relative;
+    text-decoration: none;
+    top: 10px;
+    margin: 15px;
+    color: black;
+}
+.topNavRight {
+    display: block;
+    position: absolute;
+    float: right;
+    top: 16px;
+    left: 1100px;
+}
+.topNavRight input[type=text], .topNavRight input[type=password] {
+    font-size: 16px;
+    float: left;
+    top: 0;
+    bottom: 0;
+    margin: auto 10px;
+    background-color: #fff;
+    border: 2px solid black;
+    padding: 2px 4px;
+}
+.loginBtn {
+    position: relative;
+    top: 0px;
+    font-size: 14px;
+    padding: 3px;
+    margin: 0px 10px;
+    background-color: #f6f4f3;
+    border: 2px solid black;
+    box-shadow: 0 4px #999;
+}
+.loginBtn:hover {
+    cursor: pointer;
+}
+.loginBtn:active {
+    background-color: #dbd9d8;
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}
+.container {
+    display: block;
+    position: relative;
+    width: 75%;
+    margin: auto;
+    font-size: 20px;
+}
+.slideshow-container {
+  border: 1px solid black;
+  padding: 20px;
+  max-width: 900px;
+  max-height: 600px;
+  width: 800px;
+  height: auto;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+    display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  background-color: rgba(0,0,0,0.4);
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 20px;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  width: 40%;
+  margin: 10px auto;
+  background-color: #f6f4f3;
+  border: 1px solid black;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.signup-modal {
+  position: relative;
+  width: 40%;
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px solid #f7b801;
+}
+.signup-modal input[type=text], .signup-modal input[type=password] {
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  margin: 10px auto;
+  padding: 10px 0;
+  color: black;
+  background-color: #f6f4f3;
+  border: 2px solid black;
+}
+.signupBtn {
+    overflow: hidden;
+    display: block;
+    width: 20%;
+    position: relative;
+    top: 0px;
+    font-size: 18px;
+    padding: 3px;
+    margin: 10px auto;
+    background-color: #f6f4f3;
+    border: 2px solid black;
+    box-shadow: 0 4px #999;
+}
+.signupBtn:hover {
+    cursor: pointer;
+}
+.signupBtn:active {
+    background-color: #dbd9d8;
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}
+.signuperror, .responseerror, .main .updateerror{
+  font-size: 25px;
+  color: red;
+  text-align: center;
+}
+.signupsuccess, .responsesuccess, .main .updatesuccess {
+  font-size: 25px;
+  color: green;
+  text-align: center;
+}
+.card {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  width: 17%;
+  max-width: 17%;
+  height: 300px;
+  margin: 20px;
+  text-align: center;
+  border: 2px solid rgba(255, 185, 46, 1);
+  padding: 10px;
+}
+.title {
+  font-size: 20px;
+}
+
+.price {
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.partsRadio {
+  width: 100%;
+  position: relative ;
+  float: left;
+  overflow: hidden;
+  font-size: 16px;
+}
+.parts {
+  margin: auto 30px;
+}
+input[type=radio] {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Chrome, Safari, Opera */
+  transform: scale(1.2);
+  margin-right: 2px;
+}
+.printBtn {
+    overflow: hidden;
+    display: block;
+    width: 20%;
+    position: relative;
+    top: 0px;
+    font-size: 18px;
+    padding: 3px;
+    margin: 10px auto;
+    background-color: #f6f4f3;
+    border: 2px solid black;
+    box-shadow: 0 4px #999;
+}
+.partsBtn {
+    overflow: hidden;
+    display: block;
+    width: 10%;
+    float: right;
+    position: relative;
+    font-size: 18px;
+    padding: 3px;
+    margin: auto;
+    margin-right: 40px;
+    background-color: #f6f4f3;
+    border: 2px solid black;
+}
+.partsBtn:hover, .printBtn:hover {
+    cursor: pointer;
+}
+.partsBtn:active, .printBtn:active {
+    background-color: #dbd9d8;
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}
+.order-list {
+  border: 2px solid #f7b801;
+  padding: 10px;
+  width: 60%;
+}
+.order-name {
+  float: left;
+  position: relative;
+  width: 100%;
+}
+.order-price {
+  float: right;
+  position: relative;
+}
+.order-total {
+  margin: 10px auto;
+  text-align: right;
+  border: 2px solid #f7b801;
+  width: 60%;
+  position: relative;
+  float: left;
+  padding: 10px;
+}
+.parts-container {
+  border: 2px solid black;
+  width: 70%;
+  margin: 20px auto;
+  padding: 20px;
+}
+.parts-container input[type=text], .add-parts input[type=number] {
+  padding: 10px;
+  width: 48.2%;
+  margin: 15px 10px;
+}
+.partSubmit {
+    overflow: hidden;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    padding: 2px;
+    width: 10%;
+    margin: 10px auto;
+    background-color: #f6f4f3;
+    border: 2px solid black;
+    box-shadow: 0 4px #999;
+}
+.partSubmit:hover {
+    cursor: pointer;
+}
+.partSubmit:active {
+    background-color: #dbd9d8;
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}
+.add-parts input[type=text], .add-parts input[type=number] {
+  border: 2px solid black;
+}
